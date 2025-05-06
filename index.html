@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>VR Classroom</title>
+</head>
+<body>
+    <header>
+        <h1>VR Classroom</h1>
+    </header>
+
+    <nav>
+        <ul class="bar">
+            <li><a href="index.html">Description</a></li>
+            <li><a href="demo.html">Demo Video</a></li>
+            <li><a href="eval.html">Evaluation</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="intro">    
+            <h2>Introduction</h2>
+            <p style="max-width: 1800px;">
+                Over the past few years, online education has become increasingly prevalent. It’s a convenient
+                form of education, connecting people to teach and learn from all over the world. However,
+                it has limitations—especially in terms of engagement and hands-on experience. Traditional
+                formats like Zoom or AI-based platforms offer limited interactivity and fail to replicate the
+                collaborative environment of physical classrooms.
+            </p>
+        </div>
+
+        <div class="intro">
+            <h2>Proposed Solution</h2>
+            <p style="max-width: 1500px;">
+                The VR Classroom aims to merge real-time collaboration, hands-on interactivity, and immersive
+                learning. VR enables students and teachers to enter 3D spaces that simulate classrooms,
+                offering simulations, 3D object manipulation, and social interaction via avatars.
+            </p>
+        
+            <h3>Target User Group</h3>
+            <p>Students and online course teachers.</p>
+        </div>
+
+        <h2 class="intro">Conceptual Model</h2>
+        <div class="center">
+            <div class="left-list">
+                <div>
+                    <h3>Metaphor/Analogy</h3>
+                    <p style="max-width: 700px;">
+                        A "Virtual Campus": Just like a real campus, this digital campus includes classrooms,
+                        laboratories, lounges, and more—where students engage directly with learning materials
+                        in an interactive setting.
+                    </p>
+
+                    <h3>Concepts</h3>
+                    <ul>
+                        <li><strong>Digital Twins:</strong> Personalized avatars representing students.</li>
+                        <li><strong>Interactive Objects:</strong> 3D models for hands-on learning.</li>
+                        <li><strong>Virtual Environments:</strong> Customizable scenes tailored to specific courses.</li>
+                    </ul>
+
+                    <h3>Relationship</h3>
+                    <ul>
+                        <li>Avatars represent both students and teachers.</li>
+                        <li>Students collaborate on experiments or projects using virtual objects.</li>
+                        <li>Teachers facilitate and guide virtual activities in real time.</li>
+                    </ul>
+
+                    <h3>Mapping</h3>
+                    <ul>
+                        <li><strong>Reality → VR</strong></li>
+                        <li>Student/Teacher → Avatar</li>
+                        <li>Classroom → Virtual Environment</li>
+                        <li>Physical Material → 3D Interactive Model</li>
+                    </ul>
+                </div>
+                <img src="images/holder1.jpg" style="max-width: 700px; height: auto; margin-left: 75px;">
+            </div>
+        </div>
+
+        <div class="intro">
+            <h2>Proposed Technologies</h2>
+            <ul class="names">
+                <li>VR Headsets: Meta Quest, HTC Vive, Valve Index</li>
+                <li>Development Platform: Unity</li>
+                <li>Networking: Photon Unity Networking</li>
+            </ul>
+        </div>
+
+        <div class="intro">
+            <h2>Interviews</h2>
+            <p>Participants: 1 University of Rochester professor and 2 undergraduate students.</p>
+            <p><strong>Questions asked:</strong></p>
+            <ul class="names">
+                <li>Do you have difficulties engaging students?</li>
+                <li>Are there scenarios where this is more prominent?</li>
+                <li>What solutions have you tried?</li>
+                <li>Are you familiar with or have you used VR?</li>
+                <li>How well do you think VR could help address the problem?</li>
+            </ul>
+
+            <h3>General Responses</h3>
+            <ul class="names">
+                <li><strong>Engagement Difficulties:</strong> Professors and students noted that traditional video calls often lack interactivity, causing students to lose focus.</li>
+                <li><strong>Scenarios:</strong> Larger lectures and passive learning environments made it especially difficult to maintain student attention and participation.</li>
+                <li><strong>Past Solutions:</strong> Attempts to use polls, breakout rooms, or screen sharing helped somewhat, but didn't create meaningful engagement or collaboration.</li>
+                <li><strong>VR Familiarity:</strong> Most participants had limited to no experience with VR but were curious about its potential.</li>
+                <li><strong>Perceived Effectiveness:</strong> Participants believed VR could significantly improve engagement and hands-on learning, especially in visual or STEM-based subjects.</li>
+            </ul>
+        </div>
+
+        <div class="intro">
+            <h2>User Analysis</h2>
+            <div class="left-list">
+                <img src="images/holder2.jpg" style="max-width: 700px; height: auto; margin-right: 75px;">
+                <div>
+                    <h3>Volere Shell #1</h3>
+                    <p><strong>Description:</strong> Instructors can import class materials into VR class.</p>
+                    <p><strong>Rationale:</strong> Simplifies setup and usage.</p>
+                    <p><strong>Fit Criterion:</strong> Supports slides, models, simulations.</p>
+                
+                    <h3>Volere Shell #2</h3>
+                    <p><strong>Description:</strong> Student engagement will be recorded.</p>
+                    <p><strong>Rationale:</strong> Helps instructors tailor classes.</p>
+                    <p><strong>Fit Criterion:</strong> Logs student interactions and participation.</p>
+                
+                    <h3>Volere Shell #3</h3>
+                    <p><strong>Description:</strong> Students can view and interact with 3D models.</p>
+                    <p><strong>Rationale:</strong> Supports hands-on, visual learning.</p>
+                    <p><strong>Fit Criterion:</strong> Models can be picked up and examined in VR.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="intro">Storyboards and Use Cases</h2>
+        <div class="center">
+            <div class="left-list">
+                <div>
+                    <h3>Use Case 1: First Time Setup</h3>
+                    <ol>
+                        <li>System asks for permissions (mic, camera, VR headset).</li>
+                        <li>User grants/refuses permissions.</li>
+                        <li>User selects a classroom environment.</li>
+                        <li>User creates and customizes an avatar.</li>
+                        <li>User completes (or skips) tutorial.</li>
+                        <li>User sets notification preferences.</li>
+                    </ol>
+                </div>
+                <img src="images/flow1.png" style="max-width: 300px; height: auto; margin-left: 75px;">
+            </div>
+
+            <div class="left-list">
+                <img src="images/flow2.png" style="max-width: 300px; height: auto; margin-right: 75px;">
+                <div>
+                    <h3>Use Case 2: Join a VR Class</h3>
+                    <ol>
+                        <li>User logs in and views scheduled VR classes.</li>
+                        <li>System verifies prerequisites and VR compatibility.</li>
+                        <li>User enters VR space and interacts with class.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="left-list">
+                <div>
+                    <h3>Use Case 3: Conduct a VR Lecture</h3>
+                    <ol>
+                        <li>Instructor logs in and selects a class.</li>
+                        <li>Classroom loads with teaching materials.</li>
+                        <li>Instructor teaches using voice, gestures, and shared content.</li>
+                        <li>System records participation data.</li>
+                    </ol>
+                </div>
+                <img src="images/flow3.png" style="max-width: 300px; height: auto; margin-left: 75px;">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h2>Members</h2>
+        <ul class="names">
+            <li><strong>Pai Wang</strong> – Concept proposer, Technology adviser, Concept explainer</li>
+            <li><strong>Alan Jimenez</strong> – Wireframe, User Flow, Evaluation</li>
+            <li><strong>David Robinson</strong> – Interview, Website, Demo</li>
+        </ul>
+    </footer>
+</body>
+</html>
